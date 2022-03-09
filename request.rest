@@ -1,0 +1,27 @@
+GET http://localhost:5000/foodrecipes
+
+###
+GET http://localhost:5000/foodrecipes/2
+
+###
+POST http://localhost:5000/foodrecipes
+Content-Type: application/json
+
+{
+    "name": "Porkchop and Spinach",
+    "url": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Sauteed-Pork-Chops-with-Garlic-Spinach_EXPS_THAM17_143734_B11_08_3b.jpg",
+    "description": "Pan seared pork chop and sautéed spinach."
+}
+
+###
+PATCH http://localhost:5000/foodrecipes/2
+Content-Type: application/json
+
+{
+    "name": "Porkchop and Spinachs",
+    "url": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Sauteed-Pork-Chops-with-Garlic-Spinach_EXPS_THAM17_143734_B11_08_3b.jpg",
+    "description": "Pan seared pork chop and sautéed spinach."
+}
+
+###
+DELETE http://localhost:5000/foodrecipes/2
